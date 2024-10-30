@@ -4,6 +4,7 @@ import Hero from "./Component/Hero/Hero";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Services from "./Component/Services/Services";
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar />
       <Hero />
+      <Services />
     </div>
   )
 }
