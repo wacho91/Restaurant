@@ -7,7 +7,7 @@ import StarRatings from "react-star-ratings";
 const ServicesData = [
     {
       id: 1,
-      img: Img2,
+      img: Img,
       name: "Biryani",
       description:
         "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet.",
@@ -21,7 +21,7 @@ const ServicesData = [
     },
     {
       id: 3,
-      img: Img2,
+      img: Img3,
       name: "Cold Cofee",
       description:
         "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
@@ -46,7 +46,12 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
                 {ServicesData.map((service) => (
-                    <div key={service.id}>
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="300"  
+                        key={service.id}
+                        className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]"
+                    >
                         <div className="h-[100px]">
                             <img 
                                 src={service.img} 
