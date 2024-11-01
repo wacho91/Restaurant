@@ -5,6 +5,7 @@ import Hero from "./Component/Hero/Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Services from "./Component/Services/Services";
+import Banner from "./Component/Banner/Banner";
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
+      <Banner />
     </div>
   )
 }
