@@ -39,31 +39,32 @@ const Testimonial = () => {
     };
 
   return (
-    <div>
-        <div>
-            <div>
-                <p>
+    <div className="py-10">
+        <div className="container">
+            <div className="text-center mb-20 max-w-[400px] mx-auto">
+                <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                     What our customers say
                 </p>
-                <h1>Testimonial</h1>
-                <p>
+                <h1 className="text-3xl font-bold">Testimonial</h1>
+                <p className="text-xs text-gray-400">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Perspiciatis delectus architecto error nesciunt,
                 </p>
             </div>
-            <div>
+            <div className="grid grid-cols-1 max-w-[600px] mx-auto gap-6">
                 <Slider {...settings}>
                     {testimonialData.map((data) => {
                         return (
-                            <div key={data.id}>
-                                <div>
+                            <div className="my-6" key={data.id}>
+                                <div className="flex flex-col justify-center items-center gap-4 text-center   shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                                     <img 
                                         src={data.img} 
                                         alt="image" 
+                                        className="rounded-full block mx-auto"
                                     />
-                                    <p>{data.text}</p>
-                                    <h1>{data.name}</h1>
-                                    <p>,,</p>
+                                    <p className="text-gray-500 text-sm">{data.text}</p>
+                                    <h1 className="text-xl font-bold">{data.name}</h1>
+                                    <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">,,</p>
                                 </div>
                             </div>
                         )
