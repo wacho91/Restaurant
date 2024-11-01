@@ -1,12 +1,14 @@
 import { useEffect } from "react";
 import Navbar from "./Component/Navbar/Navbar"
 import Hero from "./Component/Hero/Hero";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Services from "./Component/Services/Services";
 import Banner from "./Component/Banner/Banner";
 import AppStore from "./Component/AppStore/AppStore";
+import Testimonial from "./Component/Testimonial/Testimonial";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function App() {
   
@@ -27,6 +29,7 @@ function App() {
       <Services />
       <Banner />
       <AppStore />
+      <Testimonial />
     </div>
   )
 }
