@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Services from "./Component/Services/Services";
 import Banner from "./Component/Banner/Banner";
+import AppStore from "./Component/AppStore/AppStore";
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
       <Hero />
       <Services />
       <Banner />
+      <AppStore />
     </div>
   )
 }
