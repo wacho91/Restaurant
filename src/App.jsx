@@ -8,6 +8,7 @@ import Testimonial from "./Component/Testimonial/Testimonial";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./Component/Footer/Footer";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Banner />
       <AppStore />
       <Testimonial />
+      <Footer />
     </div>
   )
 }
