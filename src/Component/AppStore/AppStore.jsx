@@ -17,10 +17,24 @@ const AppStore = () => {
                             <img 
                                 src={PlayStore} 
                                 alt="image" 
+
+                            />
+                        </a>
+                        <a href="#">
+                            <img 
+                                src={AppStoreImg} 
+                                alt="image" 
                                 
                             />
                         </a>
                     </div>
+                </div>
+                <div>
+                    <img 
+                        src={Gif} 
+                        alt="image"
+                         
+                    />
                 </div>
             </div>
         </div>
