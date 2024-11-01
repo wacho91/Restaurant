@@ -17,20 +17,20 @@ const Banner = () => {
     };
 
   return (
-    <div>
-        <div>
-            <div>
-                <div>
+    <div className="min-h-[550px]">
+        <div className="min-h-[550px] flex justify-center items-center backdrop-blur-xl py-12 sm:py-0">
+            <div className="container">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {/*Image Banner*/}
                     <div>
-                        <img src={BiryaniImg} alt="image" />
+                        <img src={BiryaniImg} alt="image"  className="max-w-[430px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)]"/>
                     </div>
                     {/* text content section */}
-                    <div>
-                        <h1>
+                    <div className="flex flex-col justify-center gap-6 sm:pt-0">
+                        <h1 className="text-3xl sm:text-4xl font-bold">
                             Lorem, ipsum dolor.
                         </h1>
-                        <p>
+                        <p className="text-sm text-gray-500 tracking-wide leading-5">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Eaque reiciendis inventore iste ratione ex alias quis magni at
                             option.
@@ -41,15 +41,15 @@ const Banner = () => {
                             distinctio? Fugit repudiandae numquam hic quo recusandae.
                             Excepturi totam ad nam velit quasi quidem aspernatur.
                         </p>
-                        <div>
+                        <div className="flex gap-6">
                             <div>
-                                <GrSecure />
+                                <GrSecure  className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-green-100 dark:bg-green-400"/>
                             </div>
                             <div>
-                                <IoFastFood />
+                                <IoFastFood  className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-green-100 dark:bg-green-400"/>
                             </div>
                             <div>
-                                <GiFoodTruck />
+                                <GiFoodTruck className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-green-100 dark:bg-green-400"/>
                             </div>
                         </div>
                         <div>
